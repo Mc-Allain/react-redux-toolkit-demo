@@ -16,7 +16,7 @@ function App() {
 			<div className="App">
                 <AppContainer>
                     <AppHeader />
-                    <AppBody>
+                    <AppBody className={'w-full'}>
                     </AppBody>
                 </AppContainer>
 			</div>
