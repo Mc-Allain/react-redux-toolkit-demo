@@ -1,14 +1,20 @@
 import classNames from 'classnames'
 import React from 'react'
+import { connect } from 'react-redux'
 
-const AppContainer = ({children}) => {
+const AppContainer = ({children, colors}) => {
     return (
         <div className={classNames(
             'h-screen flex flex-col',
+            colors.APP_CONTAINER
         )}>
             {children}
         </div>
     )
 }
 
-export default AppContainer;
+const mapStateToProps = state => ({
+	...state.colorThemeReducer,
+})
+
+export default connect(mapStateToProps) (AppContainer);

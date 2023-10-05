@@ -2,21 +2,35 @@ import React, { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 import classNames from "classnames";
+import { switchTheme } from "../../redux/slice/colorThemeSlice"
+import { connect } from "react-redux";
+import { THEMES } from "../../constants/colorTheme";
 
-const DarkModeIconToggle = () => {
+const DarkModeIconToggle = ({colorTheme, colors, switchTheme}) => {
 	
     useEffect(() => {
         const savedTheme = localStorage.getItem('Theme');
+		
+		switchTheme(savedTheme);
     }, []);
 
 	return (
 		<FontAwesomeIcon
-			icon={true ? faMoon : faSun}
+			icon={colorTheme === THEMES.LIGHT ? faMoon : faSun}
 			className={classNames(
 				"text-xl lg:text-2xl p-2 cursor-pointer",
+				colors.THEME_TOGGLE_ICON,
 			)}
+
+			onClick={() => switchTheme(colorTheme === THEMES.LIGHT ?  THEMES.DARK : THEMES.LIGHT)}
 		/>
 	);
 };
 
-export default DarkModeIconToggle;
+const mapStateToProps = state => ({
+	...state.colorThemeReducer,
+})
+
+const mapDispatchToProps = { switchTheme }
+
+export default connect(mapStateToProps, mapDispatchToProps) (DarkModeIconToggle);

@@ -7,7 +7,7 @@ import AppBody from './components/AppContainer/AppBody';
 import rootReducer from './redux'
 
 const store = configureStore({
-	reducer:rootReducer
+	reducer: rootReducer
 })
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
 			<div className="App">
                 <AppContainer>
                     <AppHeader />
-                    <AppBody className={'w-full'}>
+                    <AppBody className={'w-[1000px]'}>
                     </AppBody>
                 </AppContainer>
 			</div>
