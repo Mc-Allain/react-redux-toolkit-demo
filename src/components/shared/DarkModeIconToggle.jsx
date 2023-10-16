@@ -12,7 +12,7 @@ const DarkModeIconToggle = ({colorTheme, colors, switchTheme}) => {
         const savedTheme = localStorage.getItem('Theme');
 		
 		switchTheme(savedTheme);
-    }, []);
+    }, [switchTheme]);
 
 	return (
 		<FontAwesomeIcon

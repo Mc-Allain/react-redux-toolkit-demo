@@ -5,12 +5,12 @@ import { connect } from 'react-redux'
 const Section = ({title, className, headerClassName, containerClassName, children, colors}) => {
 	return (
 		<div className={classNames(
-			'flex flex-col w-full border',
+			'flex flex-col border',
 			className,
 			colors.SECTION,
 		)}>
 			<div className={classNames(
-				'w-full border-b text-start px-5 py-1 text-lg font-medium',
+				'w-full border-b text-start px-5 py-1 text-lg font-medium min-h-[35px]',
 				headerClassName,
 				colors.SECTION_HEADER,
 			)}>
