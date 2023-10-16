@@ -70,25 +70,14 @@ export const vocabularyQuizSlice = createSlice({
 			
 			vocabularyItem.isToggled = !vocabularyItem.isToggled;
 		},
-		start: (state, action) => {
+		createCollections: (state, action) => {
 			const vocabularyList = generateVocabularyList([...state.vocabularyChapters]);
-
-            let availableList = [...vocabularyList].filter(vocabulary => {
-                return vocabulary.answered === false && vocabulary.skipped === false;
-            })
-
-			if (availableList.length > 0) {
-                const randomIndex = Math.floor(Math.random() * availableList.length);
-				const vocabulary = availableList?.at(randomIndex);
-				
-				state.vocabularyInDisplay = vocabulary;
-			}
 
 			state.vocabularyList = vocabularyList;
 		},
 	},
 });
 
-export const { toggleButton, start } = vocabularyQuizSlice.actions;
+export const { toggleButton, createCollections } = vocabularyQuizSlice.actions;
 
 export default vocabularyQuizSlice.reducer;

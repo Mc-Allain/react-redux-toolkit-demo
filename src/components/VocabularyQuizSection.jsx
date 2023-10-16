@@ -1,23 +1,24 @@
-import React, { useCallback, useMemo } from 'react'
+import React, { useMemo, useEffect } from 'react'
 import Section from './shared/Section'
 import ToggleButton from './shared/ToggleButton'
 import Button, { ButtonClass } from './shared/Button'
-import { toggleButton, start } from "../redux/slice/vocabularyQuizSlice"
+import { toggleButton, createCollections } from "../redux/slice/vocabularyQuizSlice"
+import { startGame } from "../redux/slice/gameSlice"
 import { Screens, switchScreen } from "../redux/slice/screenSlice"
 import { connect } from 'react-redux'
 
-const VocabularyQuizSection = ({vocabularyChapters, toggleButton, start, switchScreen}) => {
+const VocabularyQuizSection = ({vocabularyChapters, vocabularyList, toggleButton, createCollections, startGame, switchScreen}) => {
 
 	const title = 'Vocabulary Quiz';
 
 	const selectedChaptersCount = useMemo(() => [...vocabularyChapters].filter(chapter => chapter.isToggled)?.length, [vocabularyChapters]);
-
-	const handleStart = useCallback(
-		() => {
-			start();
+	
+	useEffect(() => {
+		if (vocabularyList.length > 0) {
+			startGame(vocabularyList);
 			switchScreen(Screens.MAIN_GAME, title);
-		}, [start, switchScreen]
-	)
+		}
+	}, [vocabularyList, startGame, switchScreen]);
 
 	return (
 		<Section title={title} className={'w-full md:w-1/2 lg:w-1/3 xl:w-1/4'} containerClassName={'flex flex-col gap-5'} >
@@ -33,7 +34,7 @@ const VocabularyQuizSection = ({vocabularyChapters, toggleButton, start, switchS
 				}
 			</div>
 			<div className='w-full'>
-				<Button className={'text-center !text-base uppercase'} buttonClass={ButtonClass.PRIMARY} disabled={selectedChaptersCount === 0} onClick={() => handleStart()}>
+				<Button className={'text-center text-base uppercase'} buttonClass={ButtonClass.PRIMARY} disabled={selectedChaptersCount === 0} onClick={() => createCollections()}>
 					Start
 				</Button>
 			</div>
@@ -45,6 +46,6 @@ const mapStateToProps = state => ({
 	...state.vocabularyQuizReducer,
 })
 
-const mapDispatchToProps = { toggleButton, start, switchScreen }
+const mapDispatchToProps = { toggleButton, createCollections, startGame, switchScreen }
 
 export default connect(mapStateToProps, mapDispatchToProps) (VocabularyQuizSection);

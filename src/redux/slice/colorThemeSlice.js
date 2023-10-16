@@ -16,6 +16,12 @@ const COLORS = {
 		BUTTON: 'border-gray-400 bg-white hover:bg-gray-100 text-blue-400 ',
 		TOGGLED_BUTTON: 'border-blue-700 bg-blue-400 hover:bg-blue-500 text-white',
 		DISABLED_BUTTON: 'border-gray-300 bg-gray-50 text-gray-300',
+		SUCCESS_BUTTON: 'border-gray-400 bg-white hover:bg-gray-100 text-green-400 ',
+		SUCCESS_BUTTON_SOLID: 'border-green-700 bg-green-600 hover:bg-green-500 text-white',
+		DANGER_BUTTON: 'border-gray-400 bg-white hover:bg-gray-100 text-red-400 ',
+		DANGER_BUTTON_SOLID: 'border-red-700 bg-red-600 hover:bg-red-500 text-white',
+
+        INPUT: 'bg-white border-gray-400',
 	},
 	DARK: {
         APP_CONTAINER: 'bg-gray-700',
@@ -29,6 +35,12 @@ const COLORS = {
 		BUTTON: 'border-gray-500 bg-gray-950 hover:bg-gray-800 text-blue-400 ',
 		TOGGLED_BUTTON: 'border-blue-700 bg-blue-600 hover:bg-blue-500 text-white',
 		DISABLED_BUTTON: 'border-gray-600 bg-gray-900 text-gray-600',
+		SUCCESS_BUTTON: 'border-gray-500 bg-gray-950 hover:bg-gray-800 text-green-400 ',
+		SUCCESS_BUTTON_SOLID: 'border-green-700 bg-green-600 hover:bg-green-500 text-white',
+		DANGER_BUTTON: 'border-gray-500 bg-gray-950 hover:bg-gray-800 text-red-400 ',
+		DANGER_BUTTON_SOLID: 'border-red-700 bg-red-600 hover:bg-red-500 text-white',
+
+        INPUT: 'bg-gray-950 border-gray-500',
 	}
 }
 
