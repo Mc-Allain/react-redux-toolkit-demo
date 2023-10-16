@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import StartUpScreen from '../StartUpScreen';
 import { Screens } from '../../redux/slice/screenSlice';
 import MainGameScreen from '../MainGameScreen';
+import EndGameScreen from '../EndGameScreen';
 
 const Home = ({currentScreen}) => {
 	return (
@@ -12,6 +13,8 @@ const Home = ({currentScreen}) => {
 					<StartUpScreen />
 				) : currentScreen === Screens.MAIN_GAME ? (
 					<MainGameScreen />
+				) : currentScreen === Screens.END_GAME ? (
+					<EndGameScreen />
 				) : <></>
 			}
 		</div>

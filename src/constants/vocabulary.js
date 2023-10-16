@@ -11,16 +11,16 @@ export const VOCABULARY = {
         IN: {
             JP: [
                 'いち', 'に', 'さん', 'し', 'よん', 'ご', 'ろく', 'しち', 'なな', 'はち', 'きゅう', 'じゅう',
-                'おはようございます', 'こんにちは', 'こんばんは', 'おやすみなさい', 'じゃまた', 'じゃたまたあした', 'さようなら', 'どうも ありがとう ございます', 'すみません', 'しつれいします',
+                'おはようございます', 'こんにちは', 'こんばんは', 'おやすみなさい', 'じゃまた', 'じゃまたあした', 'さようなら', 'どうも ありがとう ございます', 'すみません', 'しつれいします',
                 'わかりますか？', 'はい', 'わかります', 'いいえ', 'わかりません', 'はじめましょう', 'おわりましょう', 'やすみましょう', 'よみましょう', 'ききましょう', 'かきましょう', 
-                'もう いちど おねがいします', 'はい つぎ', 'つぎ', 'みてください', 'きいてください', 'かいてくあさい', 'よんでください', 'しつもん が ありますか？',
+                'もう いちど おねがいします', 'はい つぎ', 'つぎ', 'みてください', 'きいてください', 'かいてください', 'よんでください', 'しつもん が ありますか？',
             ],
             EN: [
                 'one', 'two', 'three', 'four', 'four', 'five', 'six', 'seven', 'seven', 'eight', 'nine', 'ten',
                 'good morning', ['good day', 'hello', 'good afternoon'], 'good evening', ['goodnight', 'good night'],
                 'see you', 'see you tomorrow', ['goodbye', 'good bye', 'farewell'], 'thank you very much',
-                ['I am sorry', 'I\'m sorry', 'excuse me'], 'excuse me',
-                'do you understand?', 'yes', 'I understand', 'no', ['I do not understand', 'I don\'t understand'],
+                ['i am sorry', 'i\'m sorry', 'excuse me'], 'excuse me',
+                'do you understand?', 'yes', 'i understand', 'no', ['i do not understand', 'i don\'t understand'],
                 ['let us start', 'let\'s start'], ['let us finish', 'let\'s finish'], ['let us take a break', 'let\'s take a break'],
                 ['let us read', 'let\'s read'], ['let us listen', 'let\'s listen'], ['let us write', 'let\'s write'],
                 ['again, please', 'one more, please'], 'next', 'next',

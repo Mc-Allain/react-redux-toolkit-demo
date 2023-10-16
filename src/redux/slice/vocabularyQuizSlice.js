@@ -57,7 +57,6 @@ const generateVocabularyList = (vocabularyChapters) => {
 const initialState = {
 	vocabularyChapters: generateVocabularyChapters(),
 	vocabularyList: [],
-	vocabularyInDisplay: {},
 };
 
 export const vocabularyQuizSlice = createSlice({
@@ -75,9 +74,12 @@ export const vocabularyQuizSlice = createSlice({
 
 			state.vocabularyList = vocabularyList;
 		},
+		removeCollections: (state, action) => {
+			state.vocabularyList = [];
+		},
 	},
 });
 
-export const { toggleButton, createCollections } = vocabularyQuizSlice.actions;
+export const { toggleButton, createCollections, removeCollections } = vocabularyQuizSlice.actions;
 
 export default vocabularyQuizSlice.reducer;
