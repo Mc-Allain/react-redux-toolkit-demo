@@ -3,6 +3,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 
 const AppContainer = ({children, colors}) => {
+    console.log(colors.APP_CONTAINER);
     return (
         <div className={classNames(
             'h-screen flex flex-col',
