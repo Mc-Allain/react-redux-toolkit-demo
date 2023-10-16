@@ -11,6 +11,8 @@ const DarkModeIconToggle = ({colorTheme, colors, switchTheme}) => {
     useEffect(() => {
         const savedTheme = localStorage.getItem('Theme');
 		
+		console.log(savedTheme);
+		
 		if (savedTheme) {
 			switchTheme(savedTheme);
 		}
