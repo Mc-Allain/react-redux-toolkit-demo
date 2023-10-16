@@ -12,6 +12,7 @@ const DarkModeIconToggle = ({colorTheme, colors, switchTheme}) => {
         const savedTheme = localStorage.getItem('Theme');
 		
 		if (savedTheme !== null) {
+			console.log(savedTheme !== null, savedTheme, null);
 			switchTheme(savedTheme);
 		}
     }, [switchTheme]);
