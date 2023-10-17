@@ -9,9 +9,9 @@ import { THEMES } from "../../constants/colorTheme";
 const DarkModeIconToggle = ({colorTheme, colors, switchTheme}) => {
 	
     useEffect(() => {
-        const savedTheme = localStorage.getItem('Theme');
+        const savedTheme = localStorage['Theme'];
 		
-		if (savedTheme && savedTheme !== null && savedTheme !== 'null') {
+		if (savedTheme) {
 			switchTheme(savedTheme);
 		}
     }, [switchTheme]);
