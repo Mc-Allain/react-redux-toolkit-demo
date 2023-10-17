@@ -7,25 +7,31 @@ import { connect } from "react-redux";
 import { THEMES } from "../../constants/colorTheme";
 
 const DarkModeIconToggle = ({colorTheme, colors, switchTheme}) => {
-	
+	const savedTheme = localStorage['Theme'];
+
     useEffect(() => {
-        const savedTheme = localStorage['Theme'];
 		
-		if (savedTheme && savedTheme !== null && savedTheme !== 'null' && savedTheme !== undefined && savedTheme !== 'undefined') {
-			switchTheme(savedTheme);
-		}
+		// if (
+		// 	savedTheme && savedTheme !== null && savedTheme !== 'null' && 
+		// 	savedTheme !== undefined && savedTheme !== 'undefined'
+		// ) {
+		// 	switchTheme(savedTheme);
+		// }
     }, [switchTheme]);
 
 	return (
-		<FontAwesomeIcon
-			icon={colorTheme === THEMES.LIGHT ? faMoon : faSun}
-			className={classNames(
-				"text-xl lg:text-2xl p-2 cursor-pointer",
-				colors.THEME_TOGGLE_ICON,
-			)}
+		<>
+			{savedTheme}
+			<FontAwesomeIcon
+				icon={colorTheme === THEMES.LIGHT ? faMoon : faSun}
+				className={classNames(
+					"text-xl lg:text-2xl p-2 cursor-pointer",
+					colors.THEME_TOGGLE_ICON,
+				)}
 
-			onClick={() => switchTheme(colorTheme === THEMES.LIGHT ?  THEMES.DARK : THEMES.LIGHT)}
-		/>
+				onClick={() => switchTheme(colorTheme === THEMES.LIGHT ?  THEMES.DARK : THEMES.LIGHT)}
+			/>
+		</>
 	);
 };
 
