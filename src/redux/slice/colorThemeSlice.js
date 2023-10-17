@@ -56,10 +56,14 @@ const colorThemeSlice = createSlice({
 		switchTheme: (state, action) => {
 			const selectedTheme = action.payload;
 
-			localStorage.setItem('Theme', selectedTheme);
+			const isValidTheme = Object.values(THEMES).includes(selectedTheme);
 
-			state.colorTheme = selectedTheme;
-			state.colors = COLORS[selectedTheme];
+			if (isValidTheme) {
+				localStorage.setItem('Theme', selectedTheme);
+
+				state.colorTheme = selectedTheme;
+				state.colors = COLORS[selectedTheme];
+			}
 		},
 	},
 });
