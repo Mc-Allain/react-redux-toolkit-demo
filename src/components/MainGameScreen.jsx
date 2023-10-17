@@ -8,7 +8,7 @@ import { Screens, switchScreen } from '../redux/slice/screenSlice';
 const MainGameScreen = ({colors, mainGameScreenName, collections, inDisplay, score, answerStatus, gameStatus, endGame, nextDisplay, submitAnswer, setAnswerStatus, switchScreen}) => {
 	const inputRef = useRef(null);
 
-	const itemInDisplay = inDisplay.item;
+	const inDisplayValue = inDisplay.value;
 
     const inInclusiveBetween = useCallback(
 		(value, min = 0, max = 1) => {
@@ -30,11 +30,17 @@ const MainGameScreen = ({colors, mainGameScreenName, collections, inDisplay, sco
 	)
 
 	useEffect(() => {
+		inputRef.current.focus();
+	}, []);
+
+	useEffect(() => {
 		if (answerStatus === AnswerStatus.CORRECT) {
 			setTimeout(() => {
 				nextDisplay();
 				inputRef.current.value = '';
 			}, 500);
+		} else {
+			inputRef.current.focus();
 		}
 	}, [answerStatus, nextDisplay]);
 
@@ -54,18 +60,17 @@ const MainGameScreen = ({colors, mainGameScreenName, collections, inDisplay, sco
 				<div className='flex flex-col justify-center items-center flex-grow gap-12 py-8'>
 					<div className={classNames(
 							'h-[180px] flex items-center', {
-								'text-7xl md:text-8xl lg:text-9xl': inInclusiveBetween(itemInDisplay.length, 1, 4),
-								'text-5xl md:text-7xl lg:text-8xl': inInclusiveBetween(itemInDisplay.length, 5, 7),
-								'text-4xl md:text-6xl lg:text-7xl': inInclusiveBetween(itemInDisplay.length, 8, 11),
-								'text-3xl md:text-5xl lg:text-6xl': inInclusiveBetween(itemInDisplay.length, 11, itemInDisplay.length),
+								'text-7xl md:text-8xl lg:text-9xl': inInclusiveBetween(inDisplayValue.length, 1, 4),
+								'text-5xl md:text-7xl lg:text-8xl': inInclusiveBetween(inDisplayValue.length, 5, 7),
+								'text-4xl md:text-6xl lg:text-7xl': inInclusiveBetween(inDisplayValue.length, 8, 11),
+								'text-3xl md:text-5xl lg:text-6xl': inInclusiveBetween(inDisplayValue.length, 11, inDisplayValue.length),
 							}, {
 								'text-green-500': answerStatus === AnswerStatus.CORRECT,
 								'text-red-500': answerStatus === AnswerStatus.INCORRECT,
 							}
 						)}
-						disabled={answerStatus === AnswerStatus.CORRECT}
 					>
-						{itemInDisplay}
+						{inDisplayValue}
 					</div>
 
 					<input type="text" ref={inputRef} className={classNames(
@@ -80,6 +85,7 @@ const MainGameScreen = ({colors, mainGameScreenName, collections, inDisplay, sco
 							}
 						}}
 						onChange={() => setAnswerStatus(AnswerStatus.DEFAULT)}
+						disabled={answerStatus === AnswerStatus.CORRECT}
 					/>
 				</div>
 

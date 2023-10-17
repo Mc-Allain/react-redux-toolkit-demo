@@ -7,7 +7,7 @@ const getRandomItem = (collections = [], skippedItem = {}) => {
 
 	if (availableList.length > 1) {
 		availableList = [...availableList].filter(item => {
-			return (Object.keys(skippedItem).length === 0 || skippedItem.item !== item.item);
+			return (Object.keys(skippedItem).length === 0 || skippedItem.value !== item.value);
 		})
 	}
 
@@ -28,6 +28,18 @@ const clearSkips = (collections = []) => {
 		}
 
 		return item;
+	})
+
+	return updatedCollections;
+}
+
+const updateCollections = (collections = [], newItem = {value: ''}) => {
+	const updatedCollections = [...collections].map(item => {
+		if (item.value === newItem.value) {
+			return newItem;
+		} else {
+			return item;
+		}
 	})
 
 	return updatedCollections;
@@ -78,14 +90,8 @@ export const gameSlice = createSlice({
 
 			if (Object.keys(inDisplay).length > 0) {
 				inDisplay.skipped = true;
-
-				updatedCollections = [...updatedCollections].map(item => {
-					if (item.item === inDisplay.item) {
-						return inDisplay;
-					} else {
-						return item;
-					}
-				})
+	
+				updatedCollections = updateCollections(updatedCollections, inDisplay);
 			}
 
 			let randomItem = getRandomItem(updatedCollections);
@@ -121,22 +127,20 @@ export const gameSlice = createSlice({
 					if (isCorrectAnswer) {
 						inDisplay.answered = true;
 	
-						updatedCollections = [...updatedCollections].map(item => {
-							if (item.item === inDisplay.item) {
-								return inDisplay;
-							} else {
-								return item;
-							}
-						})
+						updatedCollections = updateCollections(updatedCollections, inDisplay);
 	
 						if (state.gameStatus === GameStatus.LIVE) {
-							state.collections = updatedCollections;
-							state.score += 1;
-							state.answerStatus = AnswerStatus.CORRECT;
+							if (state.answerStatus !== AnswerStatus.CORRECT) {
+								state.collections = updatedCollections;
+								state.score += 1;
+								state.answerStatus = AnswerStatus.CORRECT;
+							}
 						}
 					} else {
 						if (state.gameStatus === GameStatus.LIVE) {
-							state.answerStatus = AnswerStatus.INCORRECT;
+							if (state.answerStatus !== AnswerStatus.INCORRECT) {
+								state.answerStatus = AnswerStatus.INCORRECT;
+							}
 						}
 					}
 				}

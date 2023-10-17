@@ -28,9 +28,12 @@ const createVocabulary = (vocabulary) => {
 	const EN = vocabulary.EN;
 
 	for (let key in JP) {
+		const value = JP[key];
+		const answers = EN[key];
+
 		vocabularyList.push({
-			item: JP[key],
-			answers: EN[key],
+			value: value,
+			answers: answers ? answers : '',
 			answered: false,
 			skipped: false,
 		});
