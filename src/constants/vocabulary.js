@@ -13,7 +13,7 @@ export const VOCABULARY = {
         DM: 'Demonstratives',
         INT1: 'Interrogatives 1',
         CH1ADD: 'Chapter 1 Additionals',
-        // CH2: 'Chapter 2',
+        CH2: 'Chapter 2',
         // CH3: 'Chapter 3',
         // CH4: 'Chapter 4',
         // CH5: 'Chapter 5',
@@ -153,10 +153,22 @@ export const VOCABULARY = {
         },
         CH2: {
             JP: [
-
+                'びょういん', 'こうじょう', 'ぎんこう', 'たいしかん', 'としょかん', 'モール', 'えいがかん', ['きっさてん', 'カフェ'], 'ほにゃ', 
+                'レストラン', 'デパート', 'スーパー', 'ビル', 'かいぎしつ', 'きょうしつ', 'りょう', 'アパート', 'えき', 
+                'がいこくじん', 'りょうしん', ['こども', 'こ'], 'いぬ', 'ねこ', 
+                'かばん', 'けいたい (でんわ)', 'でんわ', 'かぎ', 'めがね', 'とけい', 'テーブル', 'つくえ', 'ひきだし', 'テレビ', 'いす', 'き', 'クラス', 
             ],
             EN: [
-
+                'hospital', 'factory', 'bank', 'embassy', 'library', 'mall', 'movie house', ['coffee shop', 'cafe'], 'bookstore',
+                'restaurant', 'department store', 'supermarket', 'building', 'conference room', 'classroom', 'dormitory', 'apartment', 'train station',
+                'foreigner', 'parents', ['children', 'child'], 'dog', 'chat',
+                'bag', ['cell phone', 'cellphone'], 'phone', 'key', 'eyeglasses', ['watch', 'clock'], 'table', 'desk', 'drawer', 'television', 'chair', 'tree', 'class',
+            ],
+            ROMAJI: [
+                'byouin', 'koujou', 'ginkou', 'taishikan', 'toshokan', 'mo-ru', 'eigakan', ['kissaten', 'kafe'], 'honya', 
+                'resutoran', 'depa-to', 'su-pa-', 'biru', 'kaigishitsu', 'kyoushitsu', 'ryou', 'apa-to', 'eki', 
+                'gaikokujin', 'ryoushin', ['kodomo', 'ko'], 'inu', 'neko', 
+                'kaban', 'keitai (denwa)', 'denwa', 'kagi', 'megane', 'tokei', 'te-buru', 'tsukue', 'hikidashi', 'terebi', 'isu', 'ki', 'kurasu', 
             ],
         },
         CH3: {
