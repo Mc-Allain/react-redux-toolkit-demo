@@ -41,7 +41,7 @@ export const VOCABULARY = {
         CH1: {
             JP: [
                 'わたし', 'あなた', ['かいしゃいん', 'しゃいん'], 'しゃちょう', 'ぶちょう', 'かちょう', 'おとこ', 'おんな', 'せんせい', 'がくせい', 'にほんじん', 'アメリカじん', 'フィリピンじん',
-                ['みんな', 'みなさん'], 'ともだち', ['ひと', 'かた'], 'かぞく', 'エンジニア', 'けんしゅうせい', '～さん', '～せんせい, '
+                ['みんな', 'みなさん'], 'ともだち', ['ひと', 'かた'], 'かぞく', 'エンジニア', 'けんしゅうせい', '～さん', '～せんせい', 
                 'かいしゃ', 'オフィス', 'がっこう', 'だいがく', ['うち', 'いえ'], 'へや', 'ちゅうしゃじょう', 'おてあらい',
                 'コンピューター', 'パソコン', 'カメラ', 'ノート', 'スリッパ', 'くるま', 'ほん', 'くに', 'ことば', 'なまえ'
             ],
@@ -58,7 +58,7 @@ export const VOCABULARY = {
                 'watashi', 'anata', ['kaishain', 'shain'], 'shachou', 'buchou', 'kachou', 'otoko', 'onna', 'sensei', 'gakusei', 'nihonjin', 'amerikajin', 'firipinjin', 
                 ['minna', 'minasan'], 'tomodachi', ['hito', 'kata'], 'kazoku', 'enjinia', 'kenshuusei', '~san', '~sensei',
                 'kaisha', 'ofisu', 'gakkou', 'daigaku', ['uchi', 'ie'], 'heya', 'chuushajou', 'otearai', 
-                'konpyu-ta-', 'pasokon', 'kamera', 'no-to', 'surippa', 'kuruma', 'hon', 'kuni', 'kotoba', 'namae',
+                'konpyu-ta', 'pasokon', 'kamera', 'no-to', 'surippa', 'kuruma', 'hon', 'kuni', 'kotoba', 'namae',
             ]
         },
         CH2: {
