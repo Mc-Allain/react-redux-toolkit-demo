@@ -7,7 +7,7 @@ const getRandomItem = (collections = [], skippedItem = {}) => {
 
 	if (availableList.length > 1) {
 		availableList = [...availableList].filter(item => {
-			return (Object.keys(skippedItem).length === 0 || skippedItem.value !== item.value);
+			return (Object.keys(skippedItem).length === 0 || skippedItem.index !== item.index);
 		})
 	}
 
@@ -35,7 +35,7 @@ const clearSkips = (collections = []) => {
 
 const updateCollections = (collections = [], newItem = {value: ''}) => {
 	const updatedCollections = [...collections].map(item => {
-		if (item.value === newItem.value) {
+		if (item.index === newItem.index) {
 			return newItem;
 		} else {
 			return item;
@@ -123,6 +123,8 @@ export const gameSlice = createSlice({
 					const isEqualAnswer = answers === submittedAnswer?.trim().toLowerCase();
 					const doesContainAnswer = typeof answers === 'object' && answers.includes(submittedAnswer?.trim().toLowerCase());
 					const isCorrectAnswer = isEqualAnswer || doesContainAnswer;
+
+					// console.log([...updatedCollections].filter(item => item.index === inDisplay.index).length, inDisplay);
 					
 					if (isCorrectAnswer) {
 						inDisplay.answered = true;
