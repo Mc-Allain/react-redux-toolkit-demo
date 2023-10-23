@@ -8,6 +8,7 @@ export const VOCABULARY = {
         CH1: 'Chapter 1',
         FM: 'Family',
         DM: 'Demonstratives',
+        INT1: 'Interrogatives 1',
         // CH2: 'Chapter 2',
         // CH3: 'Chapter 3',
         // CH4: 'Chapter 4',
@@ -89,6 +90,17 @@ export const VOCABULARY = {
             ],
             ROMAJI: [
                 'kono', 'sono', 'ano', 'dono', 'kore', 'sore', 'are', 'dore', 'koko', 'soko', 'asoko', 'doko', 'kochira', 'sochira', 'achira', 'dochira'
+            ],
+        },
+        INT1: {
+            JP: [
+                'どの', 'どれ', 'どこ', 'どちら', ['どなた', 'だれ'], ['どなた の', 'だれ の'], ['なん', 'なに'], 'んあの',
+            ],
+            EN: [
+                'which noun', 'which', 'where', 'which way', 'who', 'whose', 'what', 'what kind of',
+            ],
+            ROMAJI: [
+                'dono', 'dare', 'doko', 'dochira', ['donata', 'dare'], ['donata no', 'dare no'], ['nan', 'nani'], 'nanno',
             ],
         },
         CH2: {
