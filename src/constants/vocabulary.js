@@ -6,6 +6,7 @@ export const VOCABULARY = {
     chapters: {
         IN: 'Introduction',
         CH1: 'Chapter 1',
+        FM: 'Family',
         // CH2: 'Chapter 2',
         // CH3: 'Chapter 3',
         // CH4: 'Chapter 4',
@@ -59,6 +60,22 @@ export const VOCABULARY = {
                 ['minna', 'minasan'], 'tomodachi', ['hito', 'kata'], 'kazoku', 'enjinia', 'kenshuusei', '~san', '~sensei',
                 'kaisha', 'ofisu', 'gakkou', 'daigaku', ['uchi', 'ie'], 'heya', 'chuushajou', 'otearai', 
                 'konpyu-ta', 'pasokon', 'kamera', 'no-to', 'surippa', 'kuruma', 'hon', 'kuni', 'kotoba', 'namae',
+            ]
+        },
+        FM: {
+            JP: [
+                'かぞく', 'ちち', 'はは', 'あに', 'あね', 'おとうお', 'いもうと', 'そふ', 'そぼ', ['しゅじん', 'おっと'], ['かない', 'つま'], 
+                'ごーかぞく', 'おとうさん', 'おかあさん', 'おにいさん', 'おねえさん', 'おとうとさん', 'いもうとさん', 'おじいさん', 'おばあさん', 'ごーしゅじん', 'おくさん', 
+            ],
+            EN: [
+                ['one\'s family', 'family'], 'my father', 'my mother', 'my older brother', 'my older sister', 
+                'my younger brother', 'my younger sister', 'my grandfather', 'my grandmother', 'my husband', 'my wife',
+                'another person\'s family', 'your father', 'your mother', 'your older brother', 'your older sister', 
+                'your younger brother', 'your younger sister', 'your grandfather', 'your grandmother', 'your husband', 'your wife',
+            ],
+            ROMAJI: [
+                'kazoku', 'chichi', 'haha', 'ani', 'ane', 'otouto', 'imouto', 'sofu', 'sobo', ['shujin', 'otto'], ['kanai', 'tsuma'], 
+                'go-kazoku', 'otousan', 'okaasan', 'oniisan', 'oneesan', 'otoutosan', 'imoutosan', 'ojiisan', 'obaasan', 'go-shujin', 'okusan', 
             ]
         },
         CH2: {
