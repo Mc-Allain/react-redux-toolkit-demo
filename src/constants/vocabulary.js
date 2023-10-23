@@ -142,13 +142,13 @@ export const VOCABULARY = {
         },
         CH1ADD: {
             JP: [
-                'ぶ', 'ほんしゃ', 'ソフトウェア かいはつ',
+                'ぶ', 'ほんしゃ', 'ソフトウェア かいはつ', 'ソフトウェア エンジニア', 'ただしい もの', 'ただしくない もの', 
             ],
             EN: [
-                'department', 'main office', 'software development',
+                'department', 'main office', 'software development', 'software engineer', 'correct item', 'incorrect item',
             ],
             ROMAJI: [
-                'bu', 'honsha', 'sofutowea kaihatsu',
+                'bu', 'honsha', 'sofutowea kaihatsu', 'sofutowea enjinia', 'tadashii mono', 'tadashikunai mono',
             ],
         },
         CH2: {
