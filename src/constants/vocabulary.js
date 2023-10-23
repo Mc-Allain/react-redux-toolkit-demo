@@ -12,6 +12,7 @@ export const VOCABULARY = {
         FM: 'Family',
         DM: 'Demonstratives',
         INT1: 'Interrogatives 1',
+        CH1ADD: 'Chapter 1 Additionals',
         // CH2: 'Chapter 2',
         // CH3: 'Chapter 3',
         // CH4: 'Chapter 4',
@@ -139,13 +140,24 @@ export const VOCABULARY = {
                 'dono', 'dare', 'doko', 'dochira', ['donata', 'dare'], ['donata no', 'dare no'], ['nan', 'nani'], 'nanno',
             ],
         },
+        CH1ADD: {
+            JP: [
+                'ぶ', 'ほんしゃ', 'ソフトウェア かいはつ',
+            ],
+            EN: [
+                'department', 'main office', 'software development',
+            ],
+            ROMAJI: [
+                'bu', 'honsha', 'sofutewea kaihatsu',
+            ],
+        },
         CH2: {
             JP: [
 
             ],
             EN: [
 
-            ]
+            ],
         },
         CH3: {
             JP: [
@@ -153,7 +165,7 @@ export const VOCABULARY = {
             ],
             EN: [
 
-            ]
+            ],
         },
         CH4: {
             JP: [
@@ -161,7 +173,7 @@ export const VOCABULARY = {
             ],
             EN: [
 
-            ]
+            ],
         },
         CH5: {
             JP: [
@@ -169,7 +181,7 @@ export const VOCABULARY = {
             ],
             EN: [
 
-            ]
+            ],
         },
     }
 }
