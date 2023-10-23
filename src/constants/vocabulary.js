@@ -7,6 +7,7 @@ export const VOCABULARY = {
         IN: 'Introduction',
         CH1: 'Chapter 1',
         FM: 'Family',
+        DM: 'Demonstratives',
         // CH2: 'Chapter 2',
         // CH3: 'Chapter 3',
         // CH4: 'Chapter 4',
@@ -77,6 +78,18 @@ export const VOCABULARY = {
                 'kazoku', 'chichi', 'haha', 'ani', 'ane', 'otouto', 'imouto', 'sofu', 'sobo', ['shujin', 'otto'], ['kanai', 'tsuma'], 
                 'go-kazoku', 'otousan', 'okaasan', 'oniisan', 'oneesan', 'otoutosan', 'imoutosan', 'ojiisan', 'obaasan', 'go-shujin', 'okusan', 
             ]
+        },
+        DM: {
+            JP: [
+                'この', 'その', 'あの', 'どの', 'これ', 'それ', 'あれ', 'どれ', 'ここ', 'そこ', 'あそこ', 'どこ', 'こちら', 'そちら', 'あちら', 'どちら'
+            ],
+            EN: [
+                'this noun', 'that noun', 'that noun (over there)', 'which noun', 'this', 'that', 'that (over there)', 'which', 
+                'here', 'there', 'there (over there)', 'where', 'this way', 'that way', 'that way (over there)', 'which way',
+            ],
+            ROMAJI: [
+                'kono', 'sono', 'ano', 'dono', 'kore', 'sore', 'are', 'dore', 'koko', 'soko', 'asoko', 'doko', 'kochira', 'sochira', 'achira', 'dochira'
+            ],
         },
         CH2: {
             JP: [
