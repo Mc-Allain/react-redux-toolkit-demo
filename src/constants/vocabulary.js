@@ -10,13 +10,13 @@ export const VOCABULARY = {
     values: {
         IN: {
             JP: [
-                'いち', 'に', 'さん', 'し', 'よん', 'ご', 'ろく', 'しち', 'なな', 'はち', 'きゅう', 'じゅう',
+                'いち', 'に', 'さん', ['し', 'よん'], 'ご', 'ろく', ['しち', 'なな'], 'はち', 'きゅう', 'じゅう',
                 'おはようございます', 'こんにちは', 'こんばんは', 'おやすみなさい', 'じゃまた', 'じゃまたあした', 'さようなら', 'どうも ありがとう ございます', 'すみません', 'しつれいします',
                 'わかりますか？', 'はい', 'わかります', 'いいえ', 'わかりません', 'はじめましょう', 'おわりましょう', 'やすみましょう', 'よみましょう', 'ききましょう', 'かきましょう', 
                 'もう いちど おねがいします', 'はい つぎ', 'つぎ', 'みてください', 'きいてください', 'かいてください', 'よんでください', 'しつもん が ありますか？',
             ],
             EN: [
-                'one', 'two', 'three', 'four', 'four', 'five', 'six', 'seven', 'seven', 'eight', 'nine', 'ten',
+                'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten',
                 'good morning', ['good day', 'hello', 'good afternoon'], 'good evening', ['goodnight', 'good night'],
                 'see you', 'see you tomorrow', ['goodbye', 'good bye', 'farewell'], 'thank you very much',
                 ['i am sorry', 'i\'m sorry', 'sorry', 'excuse me'], 'excuse me',
@@ -31,7 +31,7 @@ export const VOCABULARY = {
         CH1: {
             JP: [
                 'わたし', 'あなた', 'かいしゃいん', 'しゃいん', 'しゃちょう', 'ぶちょう', 'かちょう', 'おとこ', 'おんな', 'せんせい', 'がくせい', 'にほんじん', 'アメリカじん', 'フィリピンじん',
-                'みんな', 'みなさん', 'ともだち', 'ひと', 'かた', 'かぞく', 'エンジニア', 'けんしゅうせい', 'かいしゃ', 'オフィス', 'がっこう', 'だいがく', 'うち', 'いえ', 'へや', 'ちゅうしゃじょう', 'おてあらい',
+                ['みんな', 'みなさん'], 'ともだち', ['ひと', 'かた'], 'かぞく', 'エンジニア', 'けんしゅうせい', 'かいしゃ', 'オフィス', 'がっこう', 'だいがく', ['うち', 'いえ'], 'へや', 'ちゅうしゃじょう', 'おてあらい',
                 'コンピューター', 'パソコン', 'カメラ', 'ノート', 'スリッパ', 'くるま', 'ほん', 'くに', 'ことば', 'なまえ'
             ],
             EN: [
@@ -39,8 +39,8 @@ export const VOCABULARY = {
                 ['company president', 'president'], 'department head', ['section head', 'supervisor', 'manager'],
                 ['male', 'man'], ['female', 'woman'], 'teacher', 'student', 
                 ['japanese person', 'japanese'], ['american person', 'american'], ['filipino person', 'filipino'],
-                'everyone', 'everyone', 'friend', 'person', 'person', 'family', 'engineer', 'trainee',
-                'company', 'office', 'school', 'university', 'house', 'house', 'room', 'parking lot', ['washroom', 'wash room', 'comfort room', 'toilet room'],
+                'everyone', 'friend', 'person', 'family', 'engineer', 'trainee',
+                'company', 'office', 'school', 'university', 'house', 'room', 'parking lot', ['washroom', 'wash room', 'comfort room', 'toilet room'],
                 'computer', ['personal computer', 'laptop'], 'camera', 'note', ['slippers', 'slipper'], 'car', 'book', ['country', 'land'], ['language', 'word'], 'name',
             ]
         },

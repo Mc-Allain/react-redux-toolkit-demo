@@ -24,19 +24,26 @@ const generateVocabularyChapters = () => {
 
 const createVocabulary = (vocabulary) => {
 	const vocabularyList = [];
-	const JP = vocabulary.JP;
-	const EN = vocabulary.EN;
+	const valueArray = vocabulary.JP;
+	const answerArray = vocabulary.EN;
 
-	for (let key in JP) {
-		const value = JP[key];
-		const answers = EN[key];
+	for (let key in valueArray) {
+		let values = valueArray[key];
+		
+		if (typeof values !== 'object') {
+			values = [values];
+		}
 
-		vocabularyList.push({
-			value: value,
-			answers: answers ? answers : '',
-			answered: false,
-			skipped: false,
-		});
+		for (let value of values) {
+			const answers = answerArray[key];
+
+			vocabularyList.push({
+				value: value,
+				answers: answers ? answers : '',
+				answered: false,
+				skipped: false,
+			});
+		}
 	}
 
 	return vocabularyList;
