@@ -1,12 +1,16 @@
 export const VOCABULARY = {
-    chapters: [
-        ['IN', 'Introduction'],
-        ['CH1', 'Chapter 1'],
-        // ['CH2', 'Chapter 2'],
-        // ['CH3', 'Chapter 3'],
-        // ['CH4', 'Chapter 4'],
-        // ['CH5', 'Chapter 5'],
-    ],
+    type: {
+        JPTOEN: 'Japanese to English',
+        ENTOJP: 'English to Japanese'
+    },
+    chapters: {
+        IN: 'Introduction',
+        CH1: 'Chapter 1',
+        // CH2: 'Chapter 2',
+        // CH3: 'Chapter 3',
+        // CH4: 'Chapter 4',
+        // CH5: 'Chapter 5',
+    },
     values: {
         IN: {
             JP: [

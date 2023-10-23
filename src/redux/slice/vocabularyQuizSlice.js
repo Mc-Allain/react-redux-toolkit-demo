@@ -1,12 +1,11 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { VOCABULARY } from '../../constants/vocabulary';
 
-const createVocabularyChapter = (chapter = []) => {
-	const key = chapter?.at(0);
-	const label = chapter?.at(1);
+const createVocabularyChapter = (chapterKey = '') => {
+	const label = VOCABULARY.chapters[chapterKey];
 
 	return {
-		key: key,
+		key: chapterKey,
 		label: label,
 		isToggled: false,
 	};
@@ -15,8 +14,8 @@ const createVocabularyChapter = (chapter = []) => {
 const generateVocabularyChapters = () => {
 	const vocabularyChapters = [];
 
-	for (let chapter of VOCABULARY.chapters) {
-		vocabularyChapters.push(createVocabularyChapter(chapter))
+	for (let chapterKey of Object.keys(VOCABULARY.chapters)) {
+		vocabularyChapters.push(createVocabularyChapter(chapterKey));
 	}
 
 	return vocabularyChapters;
