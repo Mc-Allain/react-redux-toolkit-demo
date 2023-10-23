@@ -6,6 +6,9 @@ export const VOCABULARY = {
     chapters: {
         IN: 'Introduction',
         CH1: 'Chapter 1',
+        COU: 'Country',
+        PEO: 'People',
+        LAN: 'Language',
         FM: 'Family',
         DM: 'Demonstratives',
         INT1: 'Interrogatives 1',
@@ -64,6 +67,39 @@ export const VOCABULARY = {
                 'konpyu-ta', 'pasokon', 'kamera', 'no-to', 'surippa', 'kuruma', 'hon', 'kuni', 'kotoba', 'namae',
             ]
         },
+        COU: {
+            JP: [
+                'にほん', 'アメリカ', 'ちゅうごく', 'ドイツ', 'かんこく', 'フィリピン',
+            ],
+            EN: [
+                'japan', 'america', 'china', 'germany', 'korea', 'philippines',
+            ],
+            ROMAJI: [
+                'nihon', 'amerika', 'chuugoku', 'doitsu', 'kankoku', 'firipin',
+            ],
+        },
+        PEO: {
+            JP: [
+                'にほんじん', 'アメリカじん', 'ちゅうごくじん', 'ドイツじん', 'かんこくじん', 'フィリピンじん',
+            ],
+            EN: [
+                'japanese person', 'american person', 'chinese person', 'german person', 'korean person', 'filipino person',
+            ],
+            ROMAJI: [
+                'nihonjin', 'amerikajin', 'chuugokujin', 'doitsujin', 'kankokujin', 'firipinjin',
+            ],
+        },
+        LAN: {
+            JP: [
+                'にほんご', 'えいご', 'ちゅうごくご', 'ドイツご', 'かんこくご', 'フィリピンご',
+            ],
+            EN: [
+                'japanese language', 'english language', 'chinese language', 'german language', 'korean language', 'filipino language',
+            ],
+            ROMAJI: [
+                'nihongo', 'eigo', 'chuugokugo', 'doitsugo', 'kankokugo', 'firipingo',
+            ],
+        },
         FM: {
             JP: [
                 'かぞく', 'ちち', 'はは', 'あに', 'あね', 'おとうお', 'いもうと', 'そふ', 'そぼ', ['しゅじん', 'おっと'], ['かない', 'つま'], 
@@ -78,7 +114,7 @@ export const VOCABULARY = {
             ROMAJI: [
                 'kazoku', 'chichi', 'haha', 'ani', 'ane', 'otouto', 'imouto', 'sofu', 'sobo', ['shujin', 'otto'], ['kanai', 'tsuma'], 
                 'go-kazoku', 'otousan', 'okaasan', 'oniisan', 'oneesan', 'otoutosan', 'imoutosan', 'ojiisan', 'obaasan', 'go-shujin', 'okusan', 
-            ]
+            ],
         },
         DM: {
             JP: [
