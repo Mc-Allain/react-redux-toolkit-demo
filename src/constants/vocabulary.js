@@ -41,7 +41,8 @@ export const VOCABULARY = {
         CH1: {
             JP: [
                 'わたし', 'あなた', ['かいしゃいん', 'しゃいん'], 'しゃちょう', 'ぶちょう', 'かちょう', 'おとこ', 'おんな', 'せんせい', 'がくせい', 'にほんじん', 'アメリカじん', 'フィリピンじん',
-                ['みんな', 'みなさん'], 'ともだち', ['ひと', 'かた'], 'かぞく', 'エンジニア', 'けんしゅうせい', 'かいしゃ', 'オフィス', 'がっこう', 'だいがく', ['うち', 'いえ'], 'へや', 'ちゅうしゃじょう', 'おてあらい',
+                ['みんな', 'みなさん'], 'ともだち', ['ひと', 'かた'], 'かぞく', 'エンジニア', 'けんしゅうせい', '～さん', '～せんせい, '
+                'かいしゃ', 'オフィス', 'がっこう', 'だいがく', ['うち', 'いえ'], 'へや', 'ちゅうしゃじょう', 'おてあらい',
                 'コンピューター', 'パソコン', 'カメラ', 'ノート', 'スリッパ', 'くるま', 'ほん', 'くに', 'ことば', 'なまえ'
             ],
             EN: [
@@ -49,13 +50,14 @@ export const VOCABULARY = {
                 ['company president', 'president'], 'department head', ['section head', 'supervisor', 'manager'],
                 ['male', 'man'], ['female', 'woman'], 'teacher', 'student', 
                 ['japanese person', 'japanese'], ['american person', 'american'], ['filipino person', 'filipino'],
-                'everyone', 'friend', 'person', 'family', 'engineer', 'trainee',
+                'everyone', 'friend', 'person', 'family', 'engineer', 'trainee', ['mr.', 'miss', 'ms.', 'mrs.'], ['teacher', 'doctor'], 
                 'company', 'office', 'school', 'university', 'house', 'room', 'parking lot', ['washroom', 'wash room', 'comfort room', 'toilet room'],
                 'computer', ['personal computer', 'laptop'], 'camera', 'note', ['slippers', 'slipper'], 'car', 'book', ['country', 'land'], ['language', 'word'], 'name',
             ],
             ROMAJI: [
                 'watashi', 'anata', ['kaishain', 'shain'], 'shachou', 'buchou', 'kachou', 'otoko', 'onna', 'sensei', 'gakusei', 'nihonjin', 'amerikajin', 'firipinjin', 
-                ['minna', 'minasan'], 'tomodachi', ['hito', 'kata'], 'kazoku', 'enjinia', 'kenshuusei', 'kaisha', 'ofisu', 'gakkou', 'daigaku', ['uchi', 'ie'], 'heya', 'chuushajou', 'otearai', 
+                ['minna', 'minasan'], 'tomodachi', ['hito', 'kata'], 'kazoku', 'enjinia', 'kenshuusei', '~san', '~sensei',
+                'kaisha', 'ofisu', 'gakkou', 'daigaku', ['uchi', 'ie'], 'heya', 'chuushajou', 'otearai', 
                 'konpyu-ta-', 'pasokon', 'kamera', 'no-to', 'surippa', 'kuruma', 'hon', 'kuni', 'kotoba', 'namae',
             ]
         },
