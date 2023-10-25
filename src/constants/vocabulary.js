@@ -14,6 +14,7 @@ export const VOCABULARY = {
         INT1: 'Interrogatives 1',
         CH1ADD: 'Chapter 1 Additionals',
         CH2: 'Chapter 2',
+        LOC: 'Locatives',
         // CH3: 'Chapter 3',
         // CH4: 'Chapter 4',
         // CH5: 'Chapter 5',
@@ -161,7 +162,7 @@ export const VOCABULARY = {
             EN: [
                 'hospital', 'factory', 'bank', 'embassy', 'library', 'mall', 'movie house', ['coffee shop', 'cafe'], 'bookstore',
                 'restaurant', 'department store', 'supermarket', 'building', 'conference room', 'classroom', 'dormitory', 'apartment', 'train station',
-                'foreigner', 'parents', ['children', 'child'], 'dog', 'chat',
+                'foreigner', 'parents', ['children', 'child'], 'dog', 'cat',
                 'bag', ['cell phone', 'cellphone'], 'phone', 'key', 'eyeglasses', ['watch', 'clock'], 'table', 'desk', 'drawer', 'television', 'chair', 'tree', 'class',
             ],
             ROMAJI: [
@@ -169,6 +170,17 @@ export const VOCABULARY = {
                 'resutoran', 'depa-to', 'su-pa-', 'biru', 'kaigishitsu', 'kyoushitsu', 'ryou', 'apa-to', 'eki', 
                 'gaikokujin', 'ryoushin', ['kodomo', 'ko'], 'inu', 'neko', 
                 'kaban', 'keitai (denwa)', 'denwa', 'kagi', 'megane', 'tokei', 'te-buru', 'tsukue', 'hikidashi', 'terebi', 'isu', 'ki', 'kurasu', 
+            ],
+        },
+        LOC: {
+            JP: [
+                'うえ', 'した', 'まえ', 'うしろ', 'なか', 'そと', 'あいだ', 'ひだり', 'みぎ', 'ちかく', ['となり', 'そば', 'よこ'], 'むこう', 'きた', 'みなみ', 'にし', 'ひがし',
+            ],
+            EN: [
+                ['top', 'above'], ['below', 'under'], 'front', 'back', 'inside', 'outside', 'between', 'left', 'right', 'near', 'beside', 'across', 'north', 'south', 'west', 'east',
+            ],
+            ROMAJI: [
+                'ue', 'shita', 'mae', 'ushiro', 'naka', 'soto', 'aida', 'hidari', 'migi', 'chikaku', ['tonari', 'soba', 'yoko'], 'mukou', 'kita', 'minami', 'nishi', 'higashi',
             ],
         },
         CH3: {
