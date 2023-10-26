@@ -37,12 +37,15 @@ const MainGameScreen = ({colors, mainGameScreenName, collections, inDisplay, sco
 		if (answerStatus === AnswerStatus.CORRECT) {
 			setTimeout(() => {
 				nextDisplay();
-				inputRef.current.value = '';
 			}, 500);
 		} else {
 			inputRef.current.focus();
 		}
 	}, [answerStatus, nextDisplay]);
+
+	useEffect(() => {
+		inputRef.current.value = '';
+	}, [inDisplay]);
 
 	useEffect(() => {
 		if (gameStatus === GameStatus.DOWN) {

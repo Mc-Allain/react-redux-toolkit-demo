@@ -15,7 +15,8 @@ export const VOCABULARY = {
         CH1ADD: 'Chapter 1 Additionals',
         CH2: 'Chapter 2',
         LOC: 'Locatives',
-        // CH3: 'Chapter 3',
+        CH3: 'Chapter 3',
+        CNT: 'Counting',
         // CH4: 'Chapter 4',
         // CH5: 'Chapter 5',
     },
@@ -104,7 +105,7 @@ export const VOCABULARY = {
         },
         FM: {
             JP: [
-                'かぞく', 'ちち', 'はは', 'あに', 'あね', 'おとうお', 'いもうと', 'そふ', 'そぼ', ['しゅじん', 'おっと'], ['かない', 'つま'], 
+                'かぞく', 'ちち', 'はは', 'あに', 'あね', 'おとうと', 'いもうと', 'そふ', 'そぼ', ['しゅじん', 'おっと'], ['かない', 'つま'], 
                 'ごーかぞく', 'おとうさん', 'おかあさん', 'おにいさん', 'おねえさん', 'おとうとさん', 'いもうとさん', 'おじいさん', 'おばあさん', 'ごーしゅじん', 'おくさん', 
             ],
             EN: [
@@ -185,11 +186,43 @@ export const VOCABULARY = {
         },
         CH3: {
             JP: [
-
+                'ねだん', 'やちん', 'おかね', 'えん', 'ペソ', 'ドル', 'ぜんぶ', 'おいくら', 'ぐらい', 'はたち', 'おいくつ', 'ページ', 'れい', 'まる', 'ばんごう', 'けいたいばんごう', 'でんわばんごう', 
+                'えんぴつ', 'ボールペン', 'ペソ', 'てがみ', 'きっぷ', 'きって', 'きょうかしょ', 'かさ', 'びん', 'みかん', 'りんご', 'きょうだい',
             ],
             EN: [
-
+                'price', 'rent', 'money',  'yen', 'peso', 'dollar', ['all', 'total'], 'how much?', ['about~', 'around'], '20 years old', ['how old?', 'how many?'], 'page', ['zero', 'example'], ['zero', 'circle'], 'number', ['cell phone number', 'cellphone number'], 'phone number',
+                'pencil', ['ballpen', 'ball pen'], 'pen', 'letter', 'ticket', 'postal stamp', 'textbook', 'umbrella', 'bottle', 'orange', 'apple', 'siblings',
             ],
+            ROMAJI: [
+                'nedan', 'yachin', 'okane', 'en', 'peso', 'doru', 'zenbu', ['(o)ikura', 'oikura'], 'gurai', 'hatachi', ['(o)ikutsu', 'oikutsu'], 'pe-ji', 'rei', 'maru', 'bangou', ['keitai bangou', 'keitaibangou'], ['denwa bangou', 'denwabangou'], 
+                'enpitsu', 'bo-rupen', 'pen', 'tegami', 'kippu', 'kitte', 'kyoukasho', 'kasa', 'bin', 'mikan', 'ringo', 'kyoudai',
+            ],
+        },
+        CNT: {
+            JP: [
+                ['れい', 'まる', 'ゼロ'], 'いち', 'に', 'さん', ['し', 'よん'], 'ご', 'ろく', ['しち', 'なな'], 'はち', 'きゅう', 'じゅう',
+                'に じゅう', 'に じゅう いち', 'に じゅう ご', 'さん じゅう', 'よん じゅう', 'ご じゅう', 'ろく じゅう', 'なな じゅう', 'はち じゅう', 'きゅう じゅう', 'きゅう じゅう きゅう',
+                'ひゃく', 'に ひゃく', 'さんびゃく', 'よん ひゃく', 'ご ひゃく', 'ろっぴゃく', 'なな ひゃく', 'はっぴゃく', 'きゅう ひゃく', 'きゅう ひゃく きゅう じゅう きゅう',
+                ['せん', 'いっせん'], 'に せん', 'さん ぜん', 'よん せん', 'ご せん', 'ろく せん', 'なな せん', 'はっせん', 'きゅう せん', 'きゅう せん きゅう ひゃく きゅう じゅう きゅう',
+                'いち まん', 'に まん', 'さん まん', 'よん まん', 'ご まん', 'ろく まん', 'なな まん', 'はち まん', 'きゅう まん', 'じゅう まん',
+                'ひゃく まん', 'に ひゃく まん', 'さんびゃく まん', 'よん ひゃく まん', 'ご ひゃく まん', 'ろっぴゃく まん', 'なな ひゃく まん', 'はっぴゃく まん', 'きゅう ひゃく まん', ['せん まん', 'いっせん まん'],
+            ],
+            EN: [
+                'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten',
+                'twenty', 'twenty one', 'twenty five', 'thirty', 'fourty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety', 'ninety nine',
+                'one hundred', 'two hundred', 'three hundred', 'four hundred', 'five hundred', 'six hundred', 'seven hundred', 'eight hundred', 'nine hundred', 'nine hundred ninety nine',
+                'one thousand', 'two thousand', 'three thousand', 'four thousand', 'five thousand', 'six thousand', 'seven thousand', 'eight thousand', 'nine thousand', 'nine thousand nine hundred ninety nine',
+                'ten thousand', 'twenty thousand', 'thirty thousand', 'fourty thousand', 'fifty thousand', 'sixty thousand', 'seventy thousand', 'eighty thousand', 'ninety thousand', 'one hundred thousand',
+                'one million', 'two million', 'three million', 'four million', 'five million', 'six million', 'seven million', 'eight million', 'nine million', 'ten million',
+            ],
+            ROMAJI: [
+                ['rei', 'maru', 'zero'], 'ichi', 'ni', 'san', ['shi', 'yon'], 'go', 'roku', ['shichi', 'nana'], 'hachi', 'kyuu', 'juu',
+                'ni juu', 'ni juu ichi', 'ni juu go', 'san juu', 'yon juu', 'go juu', 'roku juu', 'nana juu', 'hachi juu', 'kyuu juu', 'kyuu juu kyuu',
+                'hyaku', 'ni hyaku', 'sanbyaku', 'yon hyaku', 'go hyaku', 'roppyaku', 'nana hyaku', 'happyaku', 'kyuu hyaku', 'kyuu hyaku kyuu juu kyuu',
+                ['sen', 'issen'], 'ni sen', 'san zen', 'yon sen', 'go sen', 'roku sen', 'nana sen', 'hassen', 'kyuu sen', 'kyuu sen kyuu hyaku kyuu juu kyuu',
+                'ichi man', 'ni man', 'san man', 'yon man', 'go man', 'roku man', 'nana man', 'hachi man', 'kyuu man', 'juu man',
+                'hyaku man', 'ni hyaku man', 'sanbyaku man', 'yon hyaku man', 'go hyaku man', 'roppyaku man', 'nana hyaku man', 'happyaku man', 'kyuu hyaku man', ['sen man', 'issen man'],
+            ]
         },
         CH4: {
             JP: [
