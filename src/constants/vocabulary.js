@@ -17,7 +17,7 @@ export const VOCABULARY = {
         LOC: 'Locatives',
         CH3: 'Chapter 3',
         CNT: 'Counting',
-        // CH4: 'Chapter 4',
+        CH4: 'Chapter 4',
         // CH5: 'Chapter 5',
     },
     values: {
@@ -226,10 +226,14 @@ export const VOCABULARY = {
         },
         CH4: {
             JP: [
-
+                'クラス', ['かいぎ', 'ミーティング'], 'しごと', 'しめきり', 'やすみ', 'きゅうけい', 'クリスマス', 'スポーツ たいかい', 'おたんじょうび', 'よてい', 'プロジェクト', 'パーティー', 'しあい', 'しけん', 
+                'きせつ', 'はる', 'なつ', 'あき', 'ふゆ', 'つゆ', 'なつやすみ', 'しゅうまつ', 'へいじつ', 
+                'こぜん', 'ごご', 'じかん', 'いつ', 'いま', ['まず', 'はじめに'], 'つぎ', 'あさ', 'ひる', ['よる', 'ばん'],
             ],
             EN: [
-
+                'class', 'meeting', 'job', 'deadline', ['vacation', 'holiday'], ['break', 'rest'], 'christmas', 'sports festival', 'birthday', 'schedule', 'project', 'party', ['game', 'match'], 'examination', 
+                'season', 'spring', 'summer', ['autumn', 'fall'], 'winter', 'rainy season', 'summer vacation', 'weekend', 'weekday', 
+                ['morning', 'am'], ['afternoon', 'pm'], 'time', 'when', 'now', 'first', 'next', 'morning', ['noon', 'daytime'], 'night',
             ],
         },
         CH5: {
