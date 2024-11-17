@@ -56,7 +56,7 @@ const MainGameScreen = ({colors, mainGameScreenName, collections, inDisplay, sco
 	return (
 		<div className='flex flex-col justify-center items-center flex-grow gap-2'>
 			<div className={'flex flex-col justify-center items-center gap-12 w-[90%] min-w-[350px] flex-grow max-h-[550px]'}>
-				<div className='text-lg font-medium uppercase'>{mainGameScreenName}</div>
+				<div className='text-lg font-medium uppercase'>{inDisplay.chapterLabel}</div>
 
 				<div className='text-2xl font-medium'>Score: {score}/{collections.length}</div>
 
@@ -77,7 +77,7 @@ const MainGameScreen = ({colors, mainGameScreenName, collections, inDisplay, sco
 					</div>
 
 					<input type="text" ref={inputRef} className={classNames(
-						'text-2xl lg:text-5xl px-4 py-2 text-center w-full border w-64 lg:w-96',
+						'text-xl lg:text-3xl px-4 py-2 text-center w-full border w-64 lg:w-96',
 						colors.INPUT
 					)}
 						onKeyUp={(e) => {

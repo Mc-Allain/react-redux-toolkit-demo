@@ -41,7 +41,7 @@ const generateVocabularyChapters = () => {
 	return vocabularyChapters;
 }
 
-const createVocabulary = (vocabulary, selectedTypes) => {
+const createVocabulary = (vocabulary, chapterLabel, selectedTypes) => {
 	const vocabularyList = [];
 	let valueArray = [];
 	let answerArray = [];
@@ -71,6 +71,7 @@ const createVocabulary = (vocabulary, selectedTypes) => {
 
 			vocabularyList.push({
 				value: value,
+				chapterLabel: chapterLabel,
 				answers: answers ? answers : '',
 				answered: false,
 				skipped: false,
@@ -89,8 +90,11 @@ const generateVocabularyList = (vocabularyQuizTypes, vocabularyChapters) => {
 	const selectedChapters = [...vocabularyChapters].filter(value => value.isToggled);
 	
 	for (let chapter of selectedChapters) {
-		const vocabulary = VOCABULARY.values[chapter.key];
-		vocabularyList.push(createVocabulary(vocabulary, selectedTypes));
+		const chapterKey = chapter.key;
+		const chapterLabel = chapter.label;
+
+		const vocabulary = VOCABULARY.values[chapterKey];
+		vocabularyList.push(createVocabulary(vocabulary, chapterLabel, selectedTypes));
 	}
 
 	vocabularyList = vocabularyList.flat();

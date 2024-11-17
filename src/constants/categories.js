@@ -5,6 +5,7 @@ export const CATEGORIES = {
         ['CH3', 'Chapter 3'],
         ['CH4', 'Chapter 4'],
         ['CH5', 'Chapter 5'],
+        ['SGL', 'Section Guidelines'],
     ],
     particle: [
         'WA', 'NO', 'TO', 'KA', 'MO', /** 'GA', 'NI', 'DE', */

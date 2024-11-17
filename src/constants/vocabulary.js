@@ -19,6 +19,14 @@ export const VOCABULARY = {
         CNT: 'Counting',
         CH4: 'Chapter 4',
         // CH5: 'Chapter 5',
+        SGL: 'Section Guidelines',
+        CH11: 'Chapter 11',
+        CH11VPF: 'Chapter 11 Verb Potential Formal',
+        CH11VPI: 'Chapter 11 Verb Potential Informal',
+        CH12: 'Chapter 12',
+        CH13: 'Chapter 13',
+        CH14: 'Chapter 14',
+        CH15: 'Chapter 15',
     },
     values: {
         IN: {
@@ -243,6 +251,199 @@ export const VOCABULARY = {
             EN: [
 
             ],
+        },
+        SGL: {
+            JP: [
+                'ごい', 'ぶんけい', 'れいぶん', 'れんしゅう', 'ぶんぽう けいしきの はんだん', 'ぶんの くみたて', 'ぶんしょうの ぶんぽう', 'どっかい', 'といと こたえ', 'わやくの れんしゅう', 
+            ],
+            EN: [
+                'vocabulary', 'sentence pattern', 'sample sentence', 'exercise', 'selecting grammar form', 'sentence composition', 'text grammar', 'reading comprehension', 'question and answer', 'english to japanese translation', 
+            ],
+            ROMAJI: [
+                'goi', 'bunkei', 'reibun', 'renshuu', 'bunpou keishikino handan', 'bunno kimitate', 'bunshouno bunpou', 'dokkai', 'toito kotae', 'wayakuno renshuu', 
+            ]
+        },
+        CH11: {
+            JP: [
+                'はな', 'さくら', 'すうがく', 'ピアノ', 'ギター', 
+                'しお', 'さとう', 'しょうゆ', 'ジャム',  'サラダ',  'ぶどう',  'たまご',  'やさい',  'にく',  'とりにく',  'ぶたにく',  'ぎゅうにく',  
+                'からい',  'あまい',  'にがい',  'すっぱい',  'しょっぱい',  
+                'すき', 'きらい',  'じょうず',  'へた',  'ほしい',  
+                'ある',  'いる',  'できる',  'わかる',  'きこえる',  'みえる',  'なる',  
+                'すこし',  'たくさん',  'おおぜい', 'おおい', 
+                'せいかつ', 'ようじ', 'おと', 'こえ',
+                'かぜ', 'にもつ', 'ひきます',
+                'システムこうがく', 'ほんしゃ', 'してん',
+                'バンドのメンバー', 'スポーツキャンプ', 'せんしゅ', 'いいおもいで',
+            ],
+            EN: [
+                'flower', 'sakura', 'mathematics', 'piano', 'guitar', 
+                'salt', 'sugar', 'soy sauce', 'jam',  'salad',  'grapes',  'egg',  'vegetables',  'meat',  'chicken meat',  'pork',  'beef',  
+                'spicy',  'sweet',  'bitter',  'sour',  'salty',  
+                ['like', 'love'], ['dislike', 'hate'],  'good at',  'poor at',  'want',  
+                'have',  'need',  'can do',  'understand',  'can hear',  'can see',  'become',  
+                ['a little', 'few'],  'many',  'many people', 'many things', 
+                'lifestyle', 'tasks', 'sound', 'voice',
+                'cold', 'luggage', 'play instrument',
+                'system engineering', ['main company', 'main office'], 'branch',
+                'band member', 'sports camp', 'player', 'good memories',
+            ],
+            ROMAJI: [
+                'hana', 'sakura', 'suugaku', 'piano', 'gita-', 
+                'shio', 'satou', 'shouyu', 'jamu',  'sarada',  'budou',  'tamago',  'yasai',  'niku',  'toriniku',  'butaniku',  'gyuuniku',  
+                'karai',  'amai',  'nigai',  'suppai',  'shoppai',  
+                'suki', 'kirai',  'jouzu',  'heta',  'hoshii',  
+                'aru',  'iru',  'dekiru',  'wakaru',  'kikoeru',  'mieru',  'naru',  
+                'sukoshi',  'takusan',  'oosei', 'ooi', 
+                'seikatsu', 'youji', 'oto', 'koe',
+                'kaze', 'nimotsu', 'hikimasu',
+                'shisutemukougaku', 'honsha', 'shiten',
+                'bandonomenba-', 'supo-tsukyanpu', 'senshu', 'iiomoide',
+            ]
+        },
+        CH11VPF: {
+            JP: [
+                'あそべます', 'よめます', 'およげます', 'はなせます', 'きけます', 'あえます', 'まてます', 'すわれます', 'いけます', 'かえれます',
+                'たべられます', 'みられます',
+                'できます', 'こられます',
+                'ひけます', 'そうじできます', 'おぼえられます', 'もてます', 'はたらけます', 'おわれます', 'よめます', 'すえます', 'もどれます', 'しつもんできます',
+                'みえます', 'きこえます',
+            ],
+            EN: [
+                ['can play', 'can go out'], 'can read', 'can swim', 'can talk', 'can listen', 'can meet', 'can wait', 'can sit down', 'can go', 'can go home',
+                'can eat', 'can watch',
+                'can do', 'can come',
+                'can play instrument', 'can clean', ['can remember', 'can memorize'], ['can hold', 'can carry'], 'can work', 'can finish', 'can read', 'can smoke', ['can return', 'can go back'], ['can ask', 'can question'],
+                'can see (line of vision)', 'can hear (line of hearing)',
+            ],
+            ROMAJI: [
+                'asobemasu', 'yomemasu', 'oyogemasu', 'hanasemasu', 'kikemasu', 'aemasu', 'matemasu', 'suwaremasu', 'ikemasu', 'kaeremasu',
+                'taberaremasu', 'miraremasu',
+                'dekimasu', 'koraremasu',
+                'hikemasu', 'soujidekimasu', 'oboeraremasu', 'motemasu', 'hatarakemasu', 'owaremasu', 'yomemasu', 'suemasu', 'modoremasu', 'shitsumondekimasu',
+                'miemasu', 'kikoemasu',
+            ]
+        },
+        CH11VPI: {
+            JP: [
+                'あそべる', 'よめる', 'およげる', 'はなせる', 'きける', 'あえる', 'まてる', 'すわれる', 'いける', 'かえれる',
+                'たべられる', 'みられる',
+                'できる', 'こられる',
+                'ひける', 'そうじできる', 'おぼえられる', 'もてる', 'はたらける', 'おわれる', 'よめる', 'すえる', 'もどれる', 'しつもんできる',
+                'みえる', 'きこえる',
+            ],
+            EN: [
+                ['can play', 'can go out'], 'can read', 'can swim', 'can talk', 'can listen', 'can meet', 'can wait', 'can sit down', 'can go', 'can go home',
+                'can eat', 'can watch',
+                'can do', 'can come',
+                'can play instrument', 'can clean', ['can remember', 'can memorize'], ['can hold', 'can carry'], 'can work', 'can finish', 'can read', 'can smoke', ['can return', 'can go back'], ['can ask', 'can question'],
+                'can see (line of vision)', 'can hear (line of hearing)',
+            ],
+            ROMAJI: [
+                'asoberu', 'yomeru', 'oyogeru', 'hanaseru', 'kikeru', 'aeru', 'materu', 'suwareru', 'ikeru', 'kaereru',
+                'taberareru', 'mirareru',
+                'dekiru', 'korareru',
+                'hikeru', 'soujidekiru', 'oboerareru', 'moteru', 'hatarakeru', 'owareru', 'yomeru', 'sueru', 'modoreru', 'shitsumondekiru',
+                'mieru', 'kikoeru',
+            ]
+        },
+        CH12: {
+            JP: [
+                'あたま', 'かお', ['かみのけ', 'かみ'], 'め', 'はな', 'みみ', 'くち', 'は', 'くび', 'て', 'ゆび', 'つめ', 'からだ', 'おなか', 'あし', 'せい',
+                'びょうき', 'ねつ', 'かぜ', 'かぜぐすり',
+                'けしゴム', 'じしょ', 'ちず',
+                'かりる', 'かす', 'かえす', 'はらう', 'だれか', 'だれも', 'なにか', 'なにも',
+                'いたい', 'だるい',
+                'わすれる', 'けっこう', 'かた', 'ざんねんですね',
+                'あさねぼう', 'しんぱいする', 'おきゃくさん', 'さいご', 'クラスにちこくする', 'スタッフ', 'つく',
+            ],
+            EN: [
+                'head', 'face', 'hair', 'eyes', 'nose', 'ears', 'mouth', 'teeth', 'neck', 'hands', 'finger', 'fingernails', 'body', 'stomach', ['feet', 'leg'], 'height',
+                ['sickness', 'illness'], 'fever', ['cold', 'flu'], 'cold medicine',
+                'eraser', 'dictionary', 'map',
+                'borrow', 'lend', 'return', 'pay', 'somebody', 'nobody', 'something', 'nothing',
+                'painful', 'sluggish',
+                'forget', ['it is okay', 'no problem'], 'shoulder', ['that is too bad', 'regrettable'],
+                'oversleep', 'worry', 'customer', 'last', 'late at class', 'staff', 'arrive',
+            ],
+            ROMAJI: [
+                'atama', 'kao', ['kaminoke', 'kami'], 'me', 'hana', 'mimi', 'kuchi', 'ha', 'kubi', 'te', 'yubi', 'tsume', 'karada', 'onaka', 'ashi', 'sei',
+                'byouki', 'netsu', 'kaze', 'kazegusuri',
+                'keshigomu', 'jisho', 'chizu',
+                'kariru', 'kasu', 'kaesu', 'harau', 'dareka', 'daremo', 'nanika', 'nanimo',
+                'itai', 'darui',
+                'wasureru', 'kekkou', 'kata', 'zannendesune',
+                'asanebou', 'shinpaisuru', 'okyakusan', 'saigo', 'kurasunichikokusuru', 'sutaffu', 'tsuku',
+            ]
+        },
+        CH13: {
+            JP: [
+                'ホテル',  'シャワー', 'おふろ', 'かびん', 'ドア', 'まど', 'はこ', 'はがき', 'ふうとう', 'わすれもの', 
+                'すむ', 'とまる', 'つく', 'つとめる', 'のる', 'あう', 'おく', 'はいる', 'みがく', 'あびる', '(おふろに)はいる', 'のぼる', 'いれる', 
+                'おくる', 'とる', 'かんがえる', 'りゅうがく(する)', 'しつもん(する)', 'うるさい', 'さき(に)',
+                'まがる', 'ホラー', 'それでは', 'そうしましょう', 'わすれる', '～かな', 'もってくる', 'でも', 'いそぐ',
+            ],
+            EN: [
+                'hotel',  'shower', 'bathtub', 'vase', 'door', 'window', 'box', 'post card', 'envelope', 'lost item', 
+                ['live', 'reside'], 'stay', 'arrive', 'work (for)', 'ride', 'meet', ['put', 'place'], 'enter', 'brush', 'take a shower', 'take a bath', 'climb', ['insert', 'put in'], 
+                'send', 'take', 'think about', 'studying abroad', ['ask', 'question'], 'noisy', 'ahead',
+                'turn', 'horror', 'well then', 'let\'s do it', 'forget', 'i wonder', 'bring', 'but', 'hurry',
+            ],
+            ROMAJI: [
+                'hoteru',  'shawa-', 'ofuro', 'kabin', 'doa', 'mado', 'hako', 'hagaki', 'fuutou', 'wasuremono', 
+                'sumu', 'tomaru', 'tsuku', 'tsutomeru', 'noru', 'au', 'oku', 'hairu', 'migaku', 'abiru', '(ofuroni)hairu', 'noboru', 'ireru', 
+                'okuru', 'toru', 'kangaeru', 'ryuugaku(suru)', 'shitsumon(suru)', 'urusai', 'saki(ni)',
+                'magaru', 'hora-', 'soredeha', 'soushimashou', 'wasureru', '~kana', 'mottekuru', 'demo', 'isugu',
+            ]
+        },
+        CH14: {
+            JP: [
+                'ふく', 'ようふく', 'シャツ', 'Yシャツ', 'せびろ', 'セーター', 'コート', 'オーバー', 'うわぎ', 'したぎ', ['ズボン', 'パンツ'], 'スカート',
+                'スリッパ', 'くつ', 'くつした',
+                'ぼうし', 'ネクタイ', 'ハンカチ', 'ベルト', 'ポケット', 'サングラス', 'イヤリング', 'ネックレス', 'ゆびわ',        
+                'きる', 'はく', 'かぶる', '(めがねを)かける', '(ネクタイを)しめる', '(ベルトを)しめる', 'ぬぐ', 'はずす', 
+                'きもの', 'ゆかた', 'いらっしゃいます', 'おひさしぶりです', 'なるほど', 'がんばってください', 'がんばります',
+                'おわり', 'すずしい', 'もらう', 'うけるつもりです',
+            ],
+            EN: [
+                'clothes', 'western style clothes', 'shirt', 'white shirt', 'suit', 'sweater', 'coat', 'overcoat', 'jacket', 'underwear', 'pants', 'skirt',
+                'slippers', 'shoes', 'socks', 
+                'hat', 'necktie', 'handkerchief', 'belt', 'pocket', 'sunglass', 'earrings', 'necklace', 'ring',        
+                'wear (upper garment)', 'wear (lower garment)', 'wear (hat)', 'wear (glasses)', 'wear (necktie)', 'wear (belt)', 'take off (clothes)', 'remove', 
+                'kimono', 'yukata', 'be there', 'long time no see', 'i see', 'please do your best', 'i will do my best',
+                'end', 'cool', 'receive', 'take an examination',
+            ],
+            ROMAJI: [
+                'fuku', 'youfuku', 'shatsu', 'yshatsu', 'sebiru', 'se-ta-', 'ko-to', 'o-ba-', 'uwagi', 'shitagi', ['zubon', 'pantsu'], 'suka-to',
+                'surippa', 'kutsu', 'kutsushita',
+                'boushi', 'nekutai', 'hankachi', 'beruto', 'poketto', 'sangurasu', 'iyaringu', 'nekkuresu', 'yubiwa',        
+                'kiru', 'haku', 'kaburu', '(meganewo)kakeru', '(nekutaiwo)shimeru', '(berutowo)shimeru', 'nugu', 'hazusu', 
+                'kimono', 'yukata', 'irasshaimasu', 'ohisashiburidesu', 'naruhodo', 'ganbattekudasai', 'ganbarimasu',
+                'owari', 'suzushii', 'morau', 'ukerutsumoridesu',
+            ]
+        },
+        CH15: {
+            JP: [
+                'でんき', 'でんきせいひん', 'エアコン', 'ストーブ', 'れいぞうこ', 
+                'ほんだな', 'さくぶん', 'かみ', 'マンガ', 'え', 
+                'あがる', 'さがる', 'わたす', 'みせる', 'きる', 'けす', 'ちがう', 'えらぶ', 'きめる', 'わすれる', 'おどる', 'ひく', 'そつぎょうする', 
+                'さいきん', 'さいご', 'だけ', 'しか(～ない)', 'はんぶん',
+                'たのしみましょう', '今年のはじめ', 'あたらしいこと', 'まなぶ', 'さんかする', 'しょるいを せいりする',
+            ],
+            EN: [
+                ['electricity', 'light'], 'electronic goods', 'air-conditioner', ['stove', 'heater'], 'refrigerator', 
+                'bookshelf', ['essay', 'composition'], 'paper', 'manga', 'painting', 
+                ['rise', 'go up'], ['fall', 'go down'], 'handover', 'show', 'cut', ['erase', 'turn off'], ['differ', 'wrong'], 'choose', 'decide', 'forget', 'dance', 'play instruments', 'graduate', 
+                'recently', 'last', 'only', 'only', 'half',
+                'let\'s have fun', 'beginning of the year', 'new things', 'learn', 'participate', 'organize documents',
+            ],
+            ROMAJI: [
+                'denki', 'denkiseihin', 'eakon', 'suto-bu', 'reizouko', 
+                'hondana', 'sakubun', 'kami', 'manga', 'e', 
+                'agaru', 'sagaru', 'watasu', 'miseru', 'kiru', 'kesu', 'chigau', 'erabu', 'kimeru', 'wasureru', 'odoru', 'hiku', 'sotsugyousuru', 
+                'saikin', 'saigo', 'dake', 'shika(~nai)', 'hanbun',
+                'tanoshimimashou', 'kotoshinohajime', 'atarashiikoto', 'manabu', 'sankasuru', 'shoruiwoseirisuru',
+            ]
         },
     }
 }
